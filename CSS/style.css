@@ -1,0 +1,390 @@
+@media (min-width: 375px) {
+    
+    .header_line_two{
+        color: hsl(0, 6%, 24%);
+        font-size: 4em;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .25em;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .article{
+        color: hsl(0, 36%, 70%);
+        line-height: 2em;
+        width: 80vw;
+        text-align: center;
+        margin: 0 auto 2em auto;
+        align-self: center ;
+    }
+
+    body{
+        font-size: 10px; 
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+        justify-content: center;
+       
+        
+    }
+
+    .right_column{
+        box-sizing: border-box;
+        width: 100%;
+        height: 66vw;
+        background-image: url("../images/hero-mobile.jpg");
+        /*background-repeat: no-repeat;*/
+        background-size: cover;
+        margin: 6em 0 0 0;
+}
+
+.header_line_one{
+    color: hsl(0, 36%, 70%);
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .25em;
+    margin: 0;
+    margin-top: 1em;
+   /* position: relative; */
+    text-align: center;
+}
+
+        .header_line_one::before{
+            content: "";
+            position: absolute;
+            width: 2.5em;
+            height: 0.8em;
+            background-image: url("../images/logo.svg");
+            background-repeat: no-repeat;
+            background-size: contain; 
+            top: calc(-66vw + (-1em));
+            left: 10vw;
+            z-index: 0;
+            
+        }
+
+        .left_column{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            padding: 3em;
+            box-sizing: border-box;
+            width: 100vw;
+            background: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
+            z-index: 0;
+            position: relative;
+
+        }
+
+        .left_column_img {
+            position: absolute;
+            top: 0; left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 800px;
+        }
+        .form {
+            display: flex;
+            flex-direction: row;
+            align-items: center ;
+            justify-content: center;
+            align-content: center;
+            padding-left: 7em;
+            
+        }
+
+        .email{
+            align-self: center;
+            font-size: 10px; 
+            font-family: 'Josefin Sans', sans-serif;
+            box-sizing: border-box;
+            height: 3em;
+            width: 25em;
+            padding-left: 1em;
+            border-radius: 1.5em;
+            border: 1px solid hsl(0, 6%, 24%);
+            opacity: .25;
+            color: hsl(0, 6%, 24%);
+            z-index: 0;
+    
+        }
+
+
+
+         .button{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            
+            z-index: -2;
+        
+           
+            height: 3em;
+            width: 7em;
+            border: none;
+            border-radius: 1.5em;
+            
+            
+            background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+            box-shadow:  0 1px 10px  hsl(0, 6%, 24%);    
+        }
+
+        .img_error_icon {
+    
+            z-index: 2;
+            position: relative;
+            height: 2em;
+            top: 0;
+            left: -7em;
+            }
+
+            .wrong_email{
+                padding-top: 0.5em;
+                padding-left: 0;
+                
+                color: hsl(0, 93%, 68%);
+                width: 25em;
+                align-self: center;
+                
+            }
+             .good_email{
+                padding-top: 0.5em;
+                padding-left:  3.5em;
+                color: green;
+                position: relative;
+                top: -1em;
+                align-self: start;
+             }
+}
+
+@media (min-width: 1100px) {
+    
+    .header_line_two{
+        color: hsl(0, 6%, 24%);
+        font-size: 4em;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .25em;
+        margin: 0;
+        text-align: left;
+    }
+    
+    .article{
+        color: hsl(0, 36%, 70%);
+        line-height: 2em;
+        width: 65%;
+        text-align: left;
+        margin: 0.5em 0 1em 0;
+        align-self: flex-start ;
+    }
+
+        
+
+
+    body{
+        font-size: 16px; 
+        font-family: 'Josefin Sans', sans-serif;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+    
+    }
+            
+        .right_column{
+            box-sizing: border-box;
+            width: 42vw;
+            height: 800px;
+            background-image: url("../images/hero-desktop.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+        }
+
+
+
+
+        .header_line_one{
+            color: hsl(0, 36%, 70%);
+            font-size: 4em;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: .25em;
+            margin: 0;
+            margin-top: 4em;
+            position: relative;
+            text-align: left;
+        }
+
+        .header_line_one::before{
+            content: "";
+            position: absolute;
+            width: 3.5em;
+            height: 2em;
+            background-image: url("../images/logo.svg");
+            background-repeat: no-repeat;
+            top: -3em;
+            left: 0;
+            z-index: 0;
+        }
+
+        .left_column{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: flex-start;
+            padding-left: 8em;
+            box-sizing: border-box;
+            width: 100vw;
+            background: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
+            z-index: 0;
+            position: relative;
+            width: 58vw;
+        }
+
+
+        .left_column_img {
+            position: absolute;
+            top: 0; left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 800px;
+        }
+        .form {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            justify-content: left;
+            align-content: left;
+            padding-left: 0;
+         }
+
+
+
+        .email{
+            font-size: 16px; 
+            font-family: 'Josefin Sans', sans-serif;
+            box-sizing: border-box;
+            height: 3em;
+            width: 25em;
+            padding-left: 1em;
+            border-radius: 1.5em;
+            border: 1px solid hsl(0, 6%, 24%);
+            opacity: .25;
+            color: hsl(0, 6%, 24%);
+            z-index: 0;
+        }
+
+
+         .button{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+            
+            z-index: -2;
+        
+           
+            height: 3em;
+            width: 7em;
+            border: none;
+            border-radius: 1.5em;
+            
+            
+            background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+            box-shadow:  0 1px 10px  hsl(0, 6%, 24%);    
+        }
+
+        .img_error_icon {
+    
+            z-index: 2;
+            position: relative;
+            left: -7em;
+            }
+
+            .wrong_email{
+                padding-top: 0.5em;
+                padding-left: 1em;
+                align-self: start;
+                color: hsl(0, 93%, 68%);
+            }
+             .good_email{
+                padding-top: 0.5em;
+                padding-left: 1em;
+                color: green;
+                position: relative;
+                top: -1em;
+                align-self: start;
+             }
+}
+
+
+
+
+
+
+
+
+.email:focus {
+    outline: none;
+  }
+
+.button_wrap{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    height: 3em;
+    width: 7em;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer; 
+    position: relative;
+
+    z-index: 0;
+    
+    left: -7em;
+    
+}
+
+
+
+.button_wrap:hover .button {
+    background: hsl(0, 80%, 86%);
+   
+}
+
+
+.img_arrow_icon {
+    
+
+position: relative;
+z-index: -1;
+left: 3.5em;
+
+
+}
+
+
+
+
+.attribution{
+    text-align: center;
+}
